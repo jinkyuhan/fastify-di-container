@@ -1,4 +1,4 @@
-import container from '../index';
+import container from '../src/index';
 import Fastify from 'fastify';
 describe('DI container plugin test', () => {
   it('의존성 그래프에서 사이클이 없는 정상적인 경우 테스트', async () => {

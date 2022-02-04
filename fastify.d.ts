@@ -1,6 +1,6 @@
 import { Server, IncomingMessage, ServerResponse } from 'http';
 declare module 'fastify' {
-  interface FastifyInstance<
+  export interface FastifyInstance<
     HttpServer = Server,
     HttpRequest = IncomingMessage,
     HttpResponse = ServerResponse

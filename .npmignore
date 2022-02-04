@@ -8,6 +8,8 @@ package-lock.json
 
 # Optional npm cache directory
 .npm
+src
+
 
 # mac files
 .DS_Store
