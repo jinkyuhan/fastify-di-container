@@ -31,7 +31,7 @@ export interface ContainerPluginOptions {
   onInitialized?: <T extends unknown>(
     componentName: string,
     initializedComponent: T
-  ) => Promise<void> | void;
+  ) => void;
 }
 
 export default containerPlugin;

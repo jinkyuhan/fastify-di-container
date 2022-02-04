@@ -19,7 +19,7 @@ const containerPlugin: FastifyPluginCallback<ContainerPluginOptions> = (
     components.forEach((component) => {
       factory[component.name] = component.constructor;
     });
-    async function get<T extends unknown>(name: string): Promise<T> {
+    function get<T extends unknown>(name: string): T {
       // if already exists in registry, return it;
       if (registry[name] != null) {
         return registry[name] as T;
@@ -31,7 +31,7 @@ const containerPlugin: FastifyPluginCallback<ContainerPluginOptions> = (
       registry[name] = factory[name](
         ..._extractParamNames(factory[name]).map((paramName) => get(paramName))
       );
-      await onInitialized(name, registry[name]);
+      onInitialized(name, registry[name]);
       return registry[name] as T;
     }
     return { get };

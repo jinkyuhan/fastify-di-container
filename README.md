@@ -91,8 +91,6 @@ app.register(container, {
   containerName: 'customContainer',
   onInitialized: <UserService>(componentName, initializedComponent) => {
     console.log(componentName);
-    const user = await initializedComponent.getUserById('test');
-    console.log(user);
   },
 });
 
