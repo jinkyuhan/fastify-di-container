@@ -3,7 +3,7 @@
   "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://github.com/jinkyuhan)",
   "version": "1.0.6",
   "main": "./lib/src/index.js",
-  "types": "./fastify.d.ts",
+  "types": "./fastify-di-container.d.ts",
   "license": "MIT",
   "keywords": [
     "fastify",
