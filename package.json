@@ -15,7 +15,7 @@
   "scripts": {
     "build": "rm -rf ./lib && tsc",
     "test": "yarn build && jest",
-    "deploy": "yarn test && yarn publish ",
+    "deploy": "yarn test && yarn publish --non-interactive",
     "prepare": "husky install"
   },
   "devDependencies": {
