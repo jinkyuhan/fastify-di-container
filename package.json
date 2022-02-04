@@ -1,7 +1,7 @@
 {
   "name": "fastify-di-container",
   "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://github.com/jinkyuhan)",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./lib/src/index.js",
   "types": "./fastify-di-container.d.ts",
   "license": "MIT",
