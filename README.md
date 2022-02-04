@@ -1,11 +1,12 @@
 # fastify-di-container
 
-[![github](https://img.shields.io/github/last-commit/jinkyuhan/fastify-di-container)]()
-![npm package](https://img.shields.io/badge/npm%20package-v1.0.0-brightgreen.svg)
-
 This plugin is the small, convenient dependency container.
+
 You can save the components you want to manage as a global singleton into the container.
 To get and use those components, you only need to set the parameter name to the name of the saved component.
+
+[![github](https://img.shields.io/github/last-commit/jinkyuhan/fastify-di-container)]()
+![npm package](https://img.shields.io/badge/npm%20package-v1.0.0-brightgreen.svg)
 
 ## Installation
 
