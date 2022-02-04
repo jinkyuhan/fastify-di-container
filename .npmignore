@@ -1,1 +1,13 @@
 .vscode
+
+# Dependency files and directories
+node_modules
+jspm_packages
+yarn.lock
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# mac files
+.DS_Store

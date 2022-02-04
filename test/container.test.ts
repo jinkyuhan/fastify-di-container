@@ -42,8 +42,8 @@ describe('DI container plugin test', () => {
         countOfInitialize.set(name, (countOfInitialize.get(name) ?? 0) + 1);
       },
     });
-    expect(fastify.container?.get('component')).not.toBeUndefined();
-    expect(fastify.container?.get('component')).not.toBeNull();
+    expect(fastify.container.get('component')).not.toBeUndefined();
+    expect(fastify.container.get('component')).not.toBeNull();
     expect(countOfInitialize.get('component')).toBe(1);
     expect(countOfInitialize.get('dependencyA')).toBe(1);
     expect(countOfInitialize.get('dependencyB')).toBe(1);
