@@ -1,7 +1,7 @@
 {
   "name": "fastify-di-container",
   "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://github.com/jinkyuhan)",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/src/index.js",
   "types": "./fastify.d.ts",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "scripts": {
     "build": "rm -rf ./lib && tsc",
     "test": "yarn build && jest",
-    "deploy": "yarn test && yarn publish",
+    "deploy": "yarn test && yarn publish ",
     "prepare": "husky install"
   },
   "devDependencies": {

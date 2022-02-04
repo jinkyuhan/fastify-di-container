@@ -2,15 +2,13 @@
 
 name: CI
 
-
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   workflow_dispatch:
-
 
 jobs:
   publish-npm:
@@ -21,6 +19,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn deploy
-        env: 
-          NODE_AUTH_TOKEN: ${{secrets.npm_auth_token}}
+      - run: yarn && yarn deploy
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
