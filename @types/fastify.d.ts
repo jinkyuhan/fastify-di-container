@@ -1,5 +1,5 @@
 import { IncomingMessage, Server, ServerResponse } from 'http';
-import { Container } from './types';
+import { Container } from '../types';
 
 declare module 'fastify' {
   export interface FastifyInstance<
