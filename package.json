@@ -1,6 +1,6 @@
 {
-  "name": "fastify-container",
-  "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://jinkyuhan.com)",
+  "name": "fastify-di-container",
+  "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://github.com/jinkyuhan)",
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
