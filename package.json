@@ -1,0 +1,26 @@
+{
+  "name": "fastify-container",
+  "author": "jinkyuhan <gkswlsrb95@gmail.com> (https://jinkyuhan.com)",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "keywords": [
+    "fastify",
+    "fastify-di",
+    "fastify-ioc",
+    "dependency injection",
+    "container"
+  ],
+  "scripts": {
+    "start": "yarn build && node ./dist/index.ts",
+    "build": "tsc --outDir ./dist"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "fastify": "^3.27.0",
+    "fastify-plugin": "^3.0.1"
+  }
+}
