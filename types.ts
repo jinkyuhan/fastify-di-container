@@ -16,13 +16,8 @@ export interface Container {
 export interface ContainerPluginOptions {
   components: ComponentSummary[];
   containerName?: string;
-  onInitialized?:
-    | (<T extends unknown>(
-        componentName: string,
-        initializedComponent: T
-      ) => void)
-    | (<T extends unknown>(
-        componentName: string,
-        initializedComponent: T
-      ) => Promise<void>);
+  onInitialized?: <T extends unknown>(
+    componentName: string,
+    initializedComponent: T
+  ) => Promise<void> | void;
 }
