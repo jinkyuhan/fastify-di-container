@@ -1,4 +1,5 @@
 import { Server, IncomingMessage, ServerResponse } from 'http';
+import containerPlugin from '.';
 declare module 'fastify' {
   export interface FastifyInstance<
     HttpServer = Server,
@@ -9,11 +10,11 @@ declare module 'fastify' {
   }
 }
 
-type ComponentRegistry = {
+export type ComponentRegistry = {
   [key: string]: unknown;
 };
 
-type ComponentFactory = {
+export type ComponentFactory = {
   [key: string]: (...args: any[]) => object;
 };
 export interface ComponentSummary {
@@ -32,3 +33,5 @@ export interface ContainerPluginOptions {
     initializedComponent: T
   ) => Promise<void> | void;
 }
+
+export default containerPlugin;
