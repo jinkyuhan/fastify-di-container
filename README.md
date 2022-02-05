@@ -14,8 +14,7 @@ To get and use those components, you only need to set the parameter name to the 
 ```bash
 npm install fastify-di-container --save
 ```
-
----
+</br>
 
 ## Example
 
@@ -68,8 +67,7 @@ async function startServer() {
 
 startServer();
 ```
-
----
+</br>
 
 ## Additional options example
 
