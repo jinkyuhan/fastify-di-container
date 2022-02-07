@@ -37,7 +37,7 @@ function makeUserRepository() {
 function makeUserService(userRepository/*Parameter name matched with component name*/) {
   return {
     getUserById: async () => {
-      const foundUser = await userRepository.findOneFromDB();
+      const foundUser = await userRepository.findOneFromDB(); // The userRepository is automatically injected 
       return foundUser;
     },
   }
