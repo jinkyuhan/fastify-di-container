@@ -43,7 +43,7 @@ function makeUserService(userRepository/*Parameter name matched with component n
   }
 }
 
-/* Now, UserService component has dependency to userRepository */
+/* Accoding to the codes above, UserService component has dependency to userRepository */
 
 async function startServer() {
   const app = Fastify();
@@ -61,6 +61,9 @@ async function startServer() {
       }
     ]
   });
+  
+  // You can use the userService like this.
+  const userService = app.container.get('userService')
 
   app.listen(3000);
 }
